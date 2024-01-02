@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7646472313935861757}
   - component: {fileID: 155220821377542104}
   - component: {fileID: -1249024388380814894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: enmi tester 3
-  m_TagString: Untagged
+  m_TagString: Default
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
