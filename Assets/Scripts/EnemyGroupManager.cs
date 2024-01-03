@@ -1,29 +1,45 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-
-
-
+using System.Collections.Generic;
 
 public class EnemyGroupManager : MonoBehaviour
 {
     public static EnemyGroupManager Instance;
 
-    public GameObject enemyPrefab;
+    // Define diferentes prefabs de enemigos y personajes
+    public GameObject[] enemyPrefabs;
     public int enemiesPerGroup = 5;
     public float timeBetweenGroups = 5f;
-    public float distanceBetweenEnemiesInGroup = 2f;
-    public Vector3 enemyScale = new Vector3(1f, 1f, 1f);
+    public float timeBetweenEnemies = 1f;
 
-    public int totalGroupsToSpawn = 3; // Número total de grupos a generar
-    private int spawnedGroups = 0; // Número de grupos generados hasta ahora
+    // Define las etapas de escala para los enemigos en el grupo
+    public List<ScaleStage> scaleStages = new List<ScaleStage>();
+
+    [System.Serializable]
+    public struct ScaleStage
+    {
+        public Vector3 scale;
+    }
+
+    // Lista de escalas de grupo
+    public List<Vector3> groupScales = new List<Vector3>();
+
+    public int totalGroupsToSpawn = 3;
+    private int spawnedGroups = 0;
 
     private Transform spawnPoint;
+
+    private int currentEnemyPrefabIndex = 0; // Índice actual del prefab de enemigo
 
     void Awake()
     {
         Instance = this;
+
+        // Asegúrate de que haya suficientes escalas de grupo definidas
+        while (groupScales.Count < totalGroupsToSpawn)
+        {
+            groupScales.Add(Vector3.one);
+        }
     }
 
     void Start()
@@ -46,19 +62,95 @@ public class EnemyGroupManager : MonoBehaviour
     {
         Vector3 startPosition = spawnPoint.position;
 
+        // Aplica la escala del grupo al punto de inicio
+        startPosition.Scale(groupScales[spawnedGroups]);
+
         for (int i = 0; i < enemiesPerGroup; i++)
         {
-            Vector3 offset = Vector3.right * i * distanceBetweenEnemiesInGroup;
-            InstantiateEnemy(startPosition + offset);
+            Vector3 offset = Vector3.right * i * 2f; // Ajusta el multiplicador según sea necesario
+
+            // Obtén el prefab de enemigo actual en el array
+            GameObject currentEnemyPrefab = enemyPrefabs[currentEnemyPrefabIndex];
+
+            // Obtén la escala de la etapa actual
+            Vector3 currentScale = scaleStages[i % scaleStages.Count].scale;
+
+            // Aplica la escala del grupo a la escala del enemigo
+            currentScale.Scale(groupScales[spawnedGroups]);
+
+            StartCoroutine(SpawnEnemyWithDelay(startPosition + offset, currentEnemyPrefab, currentScale, i * timeBetweenEnemies));
         }
+
+        // Incrementa el índice del prefab de enemigo para el próximo grupo
+        currentEnemyPrefabIndex = (currentEnemyPrefabIndex + 1) % enemyPrefabs.Length;
     }
 
-    void InstantiateEnemy(Vector3 position)
+    IEnumerator SpawnEnemyWithDelay(Vector3 spawnPosition, GameObject enemyPrefab, Vector3 enemyScale, float delay)
     {
-        GameObject enemyInstance = Instantiate(enemyPrefab, position, Quaternion.identity);
+        yield return new WaitForSeconds(delay);
+
+        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         enemyInstance.transform.localScale = enemyScale;
+
+        // Set the group index for each enemy
+        EnemyMovement enemyMovement = enemyInstance.GetComponent<EnemyMovement>();
+        if (enemyMovement != null)
+        {
+            enemyMovement.groupIndex = spawnedGroups;
+        }
     }
 }
+
+
+//    public GameObject enemyPrefab;
+//    public int enemiesPerGroup = 5;
+//    public float timeBetweenGroups = 5f;
+//    public float distanceBetweenEnemiesInGroup = 2f;
+//    public Vector3 enemyScale = new Vector3(1f, 1f, 1f);
+
+//    public int totalGroupsToSpawn = 3; // Número total de grupos a generar
+//    private int spawnedGroups = 0; // Número de grupos generados hasta ahora
+
+//    private Transform spawnPoint;
+
+//    void Awake()
+//    {
+//        Instance = this;
+//    }
+
+//    void Start()
+//    {
+//        spawnPoint = transform;
+//        StartCoroutine(SpawnEnemyGroups());
+//    }
+
+//    IEnumerator SpawnEnemyGroups()
+//    {
+//        while (spawnedGroups < totalGroupsToSpawn)
+//        {
+//            SpawnEnemyGroup();
+//            yield return new WaitForSeconds(timeBetweenGroups);
+//            spawnedGroups++;
+//        }
+//    }
+
+//    void SpawnEnemyGroup()
+//    {
+//        Vector3 startPosition = spawnPoint.position;
+
+//        for (int i = 0; i < enemiesPerGroup; i++)
+//        {
+//            Vector3 offset = Vector3.right * i * distanceBetweenEnemiesInGroup;
+//            InstantiateEnemy(startPosition + offset);
+//        }
+//    }
+
+//    void InstantiateEnemy(Vector3 position)
+//    {
+//        GameObject enemyInstance = Instantiate(enemyPrefab, position, Quaternion.identity);
+//        enemyInstance.transform.localScale = enemyScale;
+//    }
+//}
 
 
 //public class EnemyGroupManager : MonoBehaviour
