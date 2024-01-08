@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 155220821377542104}
   - component: {fileID: -1249024388380814894}
   - component: {fileID: 581458133854050535}
+  - component: {fileID: 5899830155127140123}
   m_Layer: 6
   m_Name: enmi tester 2
   m_TagString: Untagged
@@ -135,3 +136,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &5899830155127140123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2383907240844120805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b661f32bc74045458e29860509f99d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
