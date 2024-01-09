@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 
 public class EnemyGroupManager : MonoBehaviour
@@ -12,6 +13,10 @@ public class EnemyGroupManager : MonoBehaviour
     public float timeBetweenGroups = 5f;
     public float timeBetweenEnemies = 1f;
 
+    [Header("Events")]
+    public static UnityEvent onEnemyDestroy = new UnityEvent();
+
+ 
     // Define las etapas de escala para los enemigos en el grupo
     public List<ScaleStage> scaleStages = new List<ScaleStage>();
 
@@ -33,6 +38,8 @@ public class EnemyGroupManager : MonoBehaviour
 
     void Awake()
     {
+        onEnemyDestroy.AddListener(EnemyDestroyed);
+
         Instance = this;
 
         // Asegúrate de que haya suficientes escalas de grupo definidas
@@ -40,6 +47,11 @@ public class EnemyGroupManager : MonoBehaviour
         {
             groupScales.Add(Vector3.one);
         }
+    }
+
+    private void EnemyDestroyed()
+    {
+        enemiesPerGroup--;
     }
 
     void Start()

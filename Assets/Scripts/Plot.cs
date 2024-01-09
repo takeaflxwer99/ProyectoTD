@@ -29,8 +29,19 @@ public class Plot : MonoBehaviour
     private void OnMouseDown()
     {
         if (tower != null) return;
+
         //Debug.Log("Build tower here: " + name);
       Tower towerToBuild = BuildManager.main.GetSelectedTower();
-      tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+
+        if (towerToBuild.cost > LevelManager.main.currency)
+        {
+            Debug.Log("You can't afford this tower");
+            return; 
+        }
+        
+        LevelManager.main.SpendCurrency(towerToBuild.cost);
+            
+  
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 }
