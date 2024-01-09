@@ -8,12 +8,17 @@ public class Turret : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 200f;
+    [SerializeField] private float bps = 1f;        //(bps = Balas por segundo)
 
     private Transform target;
+    private float timeUntilFire;
+
 
     private void Update()
     {
@@ -28,6 +33,22 @@ public class Turret : MonoBehaviour
         {
             target = null;
         }
+        else
+        {
+            timeUntilFire += Time.deltaTime;
+
+            if(timeUntilFire >= 1f / bps)
+            {
+                Shoot();
+                timeUntilFire = 0f;
+            }
+        }
+
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Shoot");
     }
     private void FindTarget()
     {
