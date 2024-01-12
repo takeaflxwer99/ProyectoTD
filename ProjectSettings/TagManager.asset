@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Turret
+  - name: obstacles
     uniqueID: 1056202903
+    locked: 0
+  - name: decoracion
+    uniqueID: 3924928839
+    locked: 0
+  - name: Background
+    uniqueID: 3996765147
     locked: 0
