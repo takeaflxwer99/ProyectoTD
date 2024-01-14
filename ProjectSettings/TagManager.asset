@@ -15,7 +15,7 @@ TagManager:
   - UI
   - Enemy
   - Bullet
-  - 
+  - Grid
   - 
   - 
   - 
@@ -43,12 +43,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3996765147
+    locked: 0
   - name: obstacles
     uniqueID: 1056202903
     locked: 0
   - name: decoracion
     uniqueID: 3924928839
     locked: 0
-  - name: Background
-    uniqueID: 3996765147
+  - name: Enemy
+    uniqueID: 1043859289
+    locked: 0
+  - name: Torre
+    uniqueID: 366242711
+    locked: 0
+  - name: Flecha
+    uniqueID: 2574710929
+    locked: 0
+  - name: Archer
+    uniqueID: 2484793479
     locked: 0
