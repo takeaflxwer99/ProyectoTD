@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043859289
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 1337072200, guid: b17ca021a6d6b1740896cf26d9049e3e, type: 3}
   m_Color: {r: 0.0039215437, g: 0.2839244, b: 0.8862745, a: 1}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86393d3a4c148ff4f95982094ab08e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   groupIndex: 0
 --- !u!114 &8002192007988818437
 MonoBehaviour:
@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b661f32bc74045458e29860509f99d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
-  currencyWorth: 10
+  hitPoints: 1
+  currencyWorth: 25
 --- !u!50 &4191938585921137919
 Rigidbody2D:
   serializedVersion: 4

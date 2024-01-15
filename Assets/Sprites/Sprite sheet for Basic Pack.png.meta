@@ -497,7 +497,7 @@ TextureImporter:
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 6, z: 4, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -560,7 +560,7 @@ TextureImporter:
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 6, z: 4, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -581,7 +581,7 @@ TextureImporter:
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1106,7 +1106,7 @@ TextureImporter:
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 6, z: 4, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1121,13 +1121,13 @@ TextureImporter:
       name: Sprite sheet for Basic Pack_48
       rect:
         serializedVersion: 2
-        x: 741
+        x: 742
         y: 180
         width: 22
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 4, z: 5, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -3182,10 +3182,10 @@ TextureImporter:
         x: 504
         y: 68
         width: 35
-        height: 41
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 4, z: 3, w: 9}
       outline: []
       physicsShape: []
       tessellationDetail: 0

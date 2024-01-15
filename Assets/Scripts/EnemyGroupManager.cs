@@ -29,7 +29,7 @@ public class EnemyGroupManager : MonoBehaviour
     // Lista de escalas de grupo
     public List<Vector3> groupScales = new List<Vector3>();
 
-    public int totalGroupsToSpawn = 3;
+    public int totalGroupsToSpawn = 8;
     private int spawnedGroups = 0;
 
     private Transform spawnPoint;
@@ -37,8 +37,7 @@ public class EnemyGroupManager : MonoBehaviour
     private int currentEnemyPrefabIndex = 0; // Índice actual del prefab de enemigo
 
     void Awake()
-    {
-        onEnemyDestroy.AddListener(EnemyDestroyed);
+    { 
 
         Instance = this;
 
@@ -47,11 +46,6 @@ public class EnemyGroupManager : MonoBehaviour
         {
             groupScales.Add(Vector3.one);
         }
-    }
-
-    private void EnemyDestroyed()
-    {
-        enemiesPerGroup--;
     }
 
     void Start()

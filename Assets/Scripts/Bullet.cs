@@ -21,11 +21,18 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!target) return;
+        if(!target)
+    
+            {
+                Destroy(gameObject);
+                return;
+            }
 
         Vector2 direction= (target.position - transform.position).normalized;
 
         rb.velocity = direction * bulletSpeed;
+
+
 
         // Calcular la rotación hacia la dirección del objetivo
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -33,6 +40,7 @@ public class Bullet : MonoBehaviour
         // Aplicar rotación al objeto visual (Transform)
         transform.rotation = Quaternion.Euler(0f, 0f, angle - -90f); // Ajustar el ángulo inicial según el sprite
 
+     
     }
 
     private void OnCollisionEnter2D(Collision2D other)
