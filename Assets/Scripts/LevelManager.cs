@@ -1,12 +1,15 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {public static LevelManager main;
     public Transform startPoint;
     public Transform[] path;
     public int currency;
+    public int health;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -15,7 +18,8 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         currency = 100;
-        
+        health = 150;
+
     }
     public void IncreaseCurrency(int amount)
     {
@@ -33,9 +37,21 @@ public class LevelManager : MonoBehaviour
             return false;
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+    void LoseHealth(Collider other)
+        {
+            // Verificar si el objeto que entró en el trigger es un enemigo 
+            if (other.CompareTag("Enemy"))
+            {
+                // Destruir el enemigo
+                Destroy(other.gameObject);
+                health--;
+
+                if (health <= 0)
+                {
+                    Debug.Log("Game Over");
+                   
+                }
+            }
+        }
     }
-}
