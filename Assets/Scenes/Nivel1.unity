@@ -4244,17 +4244,17 @@ MonoBehaviour:
   timeBetweenGroups: 8
   timeBetweenEnemies: 0.5
   scaleStages:
-  - scale: {x: 0.7, y: 0.7, z: 0.7}
-  - scale: {x: 0.4, y: 0.4, z: 0.4}
-  - scale: {x: 0.6, y: 0.6, z: 0.6}
-  - scale: {x: 0.8, y: 0.8, z: 0.8}
-  - scale: {x: 0.7, y: 0.7, z: 0.7}
+  - scale: {x: 2, y: 2, z: 2}
+  - scale: {x: 2, y: 2, z: 2}
+  - scale: {x: 2, y: 2, z: 2}
+  - scale: {x: 2, y: 2, z: 2}
+  - scale: {x: 2, y: 2, z: 2}
   groupScales:
-  - {x: 0.7, y: 0.7, z: 0.7}
-  - {x: 0.8, y: 0.8, z: 0.8}
-  - {x: 0.5, y: 0.5, z: 0.5}
-  - {x: 0.7, y: 0.7, z: 0.7}
-  - {x: 0.8, y: 0.8, z: 0.8}
+  - {x: 2, y: 2, z: 2}
+  - {x: 2, y: 2, z: 2}
+  - {x: 2, y: 2, z: 2}
+  - {x: 2, y: 2, z: 2}
+  - {x: 2, y: 2, z: 2}
   totalGroupsToSpawn: 8
 --- !u!1 &1414046794
 GameObject:
