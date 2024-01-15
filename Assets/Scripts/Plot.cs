@@ -8,8 +8,11 @@ public class Plot : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
+ 
     private GameObject tower;
     private Color startColor;
+    private bool isOccupied = false;
+
 
     private void Start()
     {
@@ -18,7 +21,9 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (!isOccupied) { 
         sr.color = hoverColor;
+        }
     }
 
     private void OnMouseExit()
@@ -28,10 +33,11 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!isOccupied) { 
         if (tower != null) return;
-
+        }
         //Debug.Log("Build tower here: " + name);
-      Tower towerToBuild = BuildManager.main.GetSelectedTower();
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
 
         if (towerToBuild.cost > LevelManager.main.currency)
         {
@@ -43,5 +49,7 @@ public class Plot : MonoBehaviour
             
   
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        isOccupied = true;
+
     }
 }

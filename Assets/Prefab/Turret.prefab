@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9203702482473709256}
   - component: {fileID: 1047970978061151062}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Archer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5516179630201621862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7011699372838849756}
   - component: {fileID: 1784915943233911740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1378824469873017573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FiringPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4675912910880310079}
   - component: {fileID: 6011485060094169993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spritesheet_Torres_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 366242711
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -772045375, guid: acf067233280d2e48b09895fdfedfa6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
