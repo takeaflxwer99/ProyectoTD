@@ -38,20 +38,23 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    void LoseHealth(Collider other)
+   public void LoseHealth()
         {
-            // Verificar si el objeto que entró en el trigger es un enemigo 
-            if (other.CompareTag("Enemy"))
-            {
-                // Destruir el enemigo
-                Destroy(other.gameObject);
-                health--;
+        health--;
 
-                if (health <= 0)
+        if (health <= 0)
                 {
                     Debug.Log("Game Over");
                    
                 }
-            }
+        }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+    
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            LoseHealth();
         }
     }
+}
