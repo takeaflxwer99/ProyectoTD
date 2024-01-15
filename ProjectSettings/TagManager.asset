@@ -50,11 +50,11 @@ TagManager:
   - name: obstacles
     uniqueID: 1056202903
     locked: 0
-  - name: decoracion
-    uniqueID: 3924928839
-    locked: 0
   - name: Enemy
     uniqueID: 1043859289
+    locked: 0
+  - name: "Decoraci\xF3n detras"
+    uniqueID: 4214136229
     locked: 0
   - name: Torre
     uniqueID: 366242711
@@ -64,4 +64,7 @@ TagManager:
     locked: 0
   - name: Archer
     uniqueID: 2484793479
+    locked: 0
+  - name: decoracion delante
+    uniqueID: 3924928839
     locked: 0
