@@ -12,6 +12,9 @@ public class MainMenu : MonoBehaviour
     { Application.Quit(); }
     public void QuitLevel()
     { SceneManager.LoadSceneAsync(0); }
+
+    public void ReplayGame() { 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
 }
 
     
