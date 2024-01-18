@@ -22,6 +22,11 @@ public class Bullet : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
+
+       
+
+
+
     }
     public void SetTarget(Transform _target)
     {
