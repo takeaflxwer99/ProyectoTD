@@ -17076,8 +17076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 2383907240844120805, guid: 7758a1989620c6b48a9b297e6edebce8, type: 3}
-  - {fileID: 2383907240844120805, guid: 8df64aeaeafc1564d9f17f2adb3556c2, type: 3}
-  - {fileID: 2383907240844120805, guid: 7a3e297225c737e4299cdfe2c636f233, type: 3}
+  - {fileID: 6275572302255001895, guid: a18ffac15934f3a4c839ce5ce4da2422, type: 3}
+  - {fileID: 4915719424500324878, guid: 27c73fbcb2820324ca47542bd4fd6c19, type: 3}
   - {fileID: 2383907240844120805, guid: 8756b2e7ec8928446b3e3916ddee24f4, type: 3}
   - {fileID: 2383907240844120805, guid: 9ed8a18ce8e1e324d882a524eecd458e, type: 3}
   - {fileID: 2383907240844120805, guid: da37da444e23ff24cbf2188a66665e30, type: 3}
@@ -19463,7 +19463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea70d0f4a07565c44845d4ce6dbd9204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boton: {fileID: 1617917363}
 --- !u!1 &1630031066
 GameObject:
   m_ObjectHideFlags: 0
