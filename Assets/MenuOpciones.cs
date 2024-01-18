@@ -7,4 +7,7 @@ public class MenuOpciones : MonoBehaviour
 {
    public void SetVolume (float volume)
     { }
+
+    public void SetQuality (int qualityIndex)
+    { QualitySettings.SetQualityLevel(qualityIndex); }
 }
