@@ -11,7 +11,6 @@ public class LevelManager : MonoBehaviour
     public int health;
     public GameObject MenuPerder;
     public GameObject MenuPausa;
-    private bool Pausa = false;
 
     // Start is called before the first frame update
     private void Awake()
@@ -83,13 +82,11 @@ public class LevelManager : MonoBehaviour
     private void PauseGame()
     {
         Time.timeScale = 0f;
-        Pausa = true;
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
-        Pausa = false;
     }
 }
 
