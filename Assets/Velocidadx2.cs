@@ -1,35 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
-    public class Velocidadx2 : MonoBehaviour
+public class Velocidadx2 : MonoBehaviour
+{
+    private bool velocidadDoble = false;
+    public Button boton;
+    // Start is called before the first frame update
+void Start()
     {
-        [SerializeField] private TMP_Text speedTv;
-
-        private Button _speedBtn;
-        private bool _isPressed;
-        private float _gameSpeed;
-
-        private void Awake()
+        boton = GetComponent<Button>();
+        if (boton != null)
         {
-            _isPressed = false;
-            _gameSpeed = 1f;
-            Time.timeScale = _gameSpeed;
-            _speedBtn = GetComponent<Button>();
-            _speedBtn.onClick.AddListener(OnSpeedBtnClick);
-        }
-
-        private void Start()
-        {
-            speedTv.text = "X" + _gameSpeed; //default speed
-        }
-
-        private void OnSpeedBtnClick()
-        {
-            _isPressed = !_isPressed;
-            _gameSpeed = _isPressed ? 2f : 1f;
-            speedTv.text = "X" + _gameSpeed;
+            boton.onClick.AddListener(ToggleVelocidad);
         }
     }
+    public void ToggleVelocidad()
+    {
+
+        velocidadDoble = !velocidadDoble;
+
+        Time.timeScale = velocidadDoble ? 2f : 1f;
+
+        if (!velocidadDoble)
+        {
+            boton.interactable = !boton.interactable;
+        }
+    }
+}
