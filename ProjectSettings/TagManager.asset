@@ -56,14 +56,17 @@ TagManager:
   - name: Hierba
     uniqueID: 1142241305
     locked: 0
-  - name: Enemy
-    uniqueID: 1043859289
-    locked: 0
   - name: "Decoraci\xF3n detras"
     uniqueID: 4214136229
     locked: 0
   - name: Torre
     uniqueID: 366242711
+    locked: 0
+  - name: decoracion en medioXD
+    uniqueID: 62843041
+    locked: 0
+  - name: Enemy
+    uniqueID: 1043859289
     locked: 0
   - name: Flecha
     uniqueID: 2574710929
