@@ -80,7 +80,7 @@ public class LevelManager : MonoBehaviour
             LoseHealth();
         }
     }
-    private void PauseGame()
+    public void PauseGame()
     {
         Time.timeScale = 0f;
         Pausa = true;
