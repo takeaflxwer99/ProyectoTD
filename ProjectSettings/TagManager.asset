@@ -53,6 +53,9 @@ TagManager:
   - name: obstacles
     uniqueID: 1056202903
     locked: 0
+  - name: Hierba
+    uniqueID: 1142241305
+    locked: 0
   - name: Enemy
     uniqueID: 1043859289
     locked: 0
