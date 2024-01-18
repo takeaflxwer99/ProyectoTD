@@ -17040,7 +17040,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1390677879}
   - component: {fileID: 1390677880}
-  - component: {fileID: 1390677881}
   m_Layer: 0
   m_Name: EnemyGroupManager
   m_TagString: Untagged
@@ -17104,21 +17103,6 @@ MonoBehaviour:
   - {x: 3, y: 3, z: 3}
   - {x: 4, y: 4, z: 4}
   totalGroupsToSpawn: 8
---- !u!114 &1390677881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390677877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7d3ccf0cb077d408dd058ec68bfcdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  custom_cursor: 1
-  cursor_texture: {fileID: 2800000, guid: cc717bae887843944aebe3101da2cd96, type: 3}
-  cursor_hotspot: {x: 0, y: 0}
 --- !u!1 &1395904272
 GameObject:
   m_ObjectHideFlags: 0
