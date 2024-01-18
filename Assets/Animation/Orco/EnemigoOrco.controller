@@ -11,6 +11,15 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: Lado
     m_EventTreshold: 1
+  - m_ConditionMode: 1
+    m_ConditionEvent: AndarLado
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarFrente
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarEspaldas
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1022818822947338141}
   m_Solo: 0
@@ -36,13 +45,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7497066069538050464}
-    m_Position: {x: 330, y: 110, z: 0}
+    m_Position: {x: 310, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 452608649546056362}
-    m_Position: {x: 610, y: 290, z: 0}
+    m_Position: {x: 600, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1022818822947338141}
-    m_Position: {x: 610, y: 110, z: 0}
+    m_Position: {x: 410, y: 320, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -64,6 +73,24 @@ AnimatorController:
   m_AnimatorParameters:
   - m_Name: Lado
     m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: AndarFrente
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: AndarLado
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: AndarEspaldas
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -119,6 +146,15 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: Lado
     m_EventTreshold: 2
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarFrente
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarLado
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: AndarEspaldas
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 452608649546056362}
   m_Solo: 0
@@ -172,6 +208,15 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: Lado
     m_EventTreshold: 1
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarFrente
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: AndarLado
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarEspaldas
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1022818822947338141}
   m_Solo: 0
@@ -196,6 +241,15 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 6
     m_ConditionEvent: Lado
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: AndarFrente
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarLado
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: AndarEspaldas
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7497066069538050464}
