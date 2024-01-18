@@ -17079,10 +17079,10 @@ MonoBehaviour:
   - {fileID: 6275572302255001895, guid: a18ffac15934f3a4c839ce5ce4da2422, type: 3}
   - {fileID: 4915719424500324878, guid: 27c73fbcb2820324ca47542bd4fd6c19, type: 3}
   - {fileID: 364136518315424977, guid: 483c908c9fbf4004ab71fc6a8ccba2aa, type: 3}
-  - {fileID: 2383907240844120805, guid: 9ed8a18ce8e1e324d882a524eecd458e, type: 3}
-  - {fileID: 2383907240844120805, guid: da37da444e23ff24cbf2188a66665e30, type: 3}
-  - {fileID: 2383907240844120805, guid: 66d3962c427fa28448cf0ce8a8b4cd12, type: 3}
-  - {fileID: 2383907240844120805, guid: 24134809a47ead04783142192f225aa0, type: 3}
+  - {fileID: 6275572302255001895, guid: 58642bf5ec31be642bd41f924197c9c7, type: 3}
+  - {fileID: 2383907240844120805, guid: 845a9817b285b664990df31ba538e1ce, type: 3}
+  - {fileID: 364136518315424977, guid: 829319ba411290d418d1647f520dc000, type: 3}
+  - {fileID: 4915719424500324878, guid: b321836938fd306418520743a556272f, type: 3}
   enemiesPerGroup: 5
   timeBetweenGroups: 14
   timeBetweenEnemies: 1
@@ -21917,7 +21917,7 @@ MonoBehaviour:
   - {fileID: 348134732}
   - {fileID: 1797054141}
   currency: 150
-  health: 15
+  health: 12
   MenuPerder: {fileID: 550374338}
   MenuPausa: {fileID: 647755252}
 --- !u!61 &1881916775

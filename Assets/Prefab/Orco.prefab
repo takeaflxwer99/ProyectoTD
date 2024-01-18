@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b661f32bc74045458e29860509f99d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
-  currencyWorth: 12
+  hitPoints: 1
+  currencyWorth: 15
 --- !u!50 &3132980021122709232
 Rigidbody2D:
   serializedVersion: 4
