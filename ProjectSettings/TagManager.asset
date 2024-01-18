@@ -7,6 +7,7 @@ TagManager:
   - Default
   - Turret
   - Enemy
+  - Waypoint
   layers:
   - Default
   - TransparentFX
