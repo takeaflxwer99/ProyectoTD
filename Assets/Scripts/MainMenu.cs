@@ -13,7 +13,8 @@ public class MainMenu : MonoBehaviour
     public void QuitLevel()
     { SceneManager.LoadSceneAsync(0); }
 
-    public void ReplayGame() { 
+    public void ReplayGame() {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
 }
 
