@@ -601,9 +601,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408969770}
-  - component: {fileID: 408969771}
   - component: {fileID: 408969773}
   - component: {fileID: 408969772}
+  - component: {fileID: 408969774}
   m_Layer: 5
   m_Name: Panel NIveles
   m_TagString: Untagged
@@ -618,33 +618,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408969769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1345398662}
   - {fileID: 1786045307}
   - {fileID: 1748101381}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1227903415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &408969771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408969769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ee6322a2fdcd14e8e39207c211938a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 3840, y: 2160}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408969772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,6 +679,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 22
   m_TargetDisplay: 0
+--- !u!114 &408969774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408969769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea70d0f4a07565c44845d4ce6dbd9204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675859113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1448,7 @@ RectTransform:
   - {fileID: 1085857734}
   - {fileID: 2018741067}
   - {fileID: 1645991018}
+  - {fileID: 408969770}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1537,7 +1538,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1231220580}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 408969774}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: OpenLevel2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1231220580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,9 +1879,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 408969771}
-        m_TargetAssemblyTypeName: Menuniveles, Assembly-CSharp
-        m_MethodName: OpenLevel
+      - m_Target: {fileID: 408969774}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: OpenLevel1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2740,7 +2753,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1866845904}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 408969769}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1866845904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3092,4 +3117,3 @@ SceneRoots:
   - {fileID: 1293713762}
   - {fileID: 1227903415}
   - {fileID: 207198748}
-  - {fileID: 408969770}

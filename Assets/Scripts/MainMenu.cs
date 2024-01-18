@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+    public void PlayGame()
     { SceneManager.LoadSceneAsync(1); }
 
     public void QuitGame()
@@ -16,6 +16,17 @@ public class MainMenu : MonoBehaviour
     public void ReplayGame() {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
+
+public void OpenLevel1()
+{
+    SceneManager.LoadScene("Nivel1");
+}
+    public void OpenLevel2()
+    {
+        SceneManager.LoadScene("Nivel2");
+    }
+
 }
 
-    
+
+
