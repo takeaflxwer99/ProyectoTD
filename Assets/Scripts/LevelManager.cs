@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     public GameObject victoryMenu;
 
     public AudioSource gameMusic;
-    
+    public AudioSource gameOverSound;
     public AudioSource victorySound;
 
 
@@ -73,8 +73,13 @@ public class LevelManager : MonoBehaviour
         if (MenuPerder != null)
         {
             MenuPerder.SetActive(true);
-            PauseGame();
 
+            if (gameOverSound != null)
+            {
+                gameOverSound.Play();
+            }
+
+            PauseGame();
         }
     }
 
