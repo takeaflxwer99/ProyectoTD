@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public int health;
     public GameObject MenuPerder;
     public GameObject MenuPausa;
+    public GameObject victoryMenu;
 
     // Start is called before the first frame update
     private void Awake()
@@ -21,7 +22,7 @@ public class LevelManager : MonoBehaviour
     {
         currency = 150;
         health = 15;
-
+        EnemyGroupManager.onLastWaveDestroyed.AddListener(ShowVictoryMenu);
     }
     public void IncreaseCurrency(int amount)
     {
@@ -60,7 +61,15 @@ public class LevelManager : MonoBehaviour
 
         }
     }
-        private void ShowPauseMenu()
+
+    void ShowVictoryMenu()
+    {
+        // Activa el menú de victoria cuando se dispare el evento
+        victoryMenu.SetActive(true);
+    }
+
+
+private void ShowPauseMenu()
         {
             if (MenuPausa != null)
             {

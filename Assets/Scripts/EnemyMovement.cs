@@ -1,27 +1,38 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
     public float speed = 2f;
-    public int groupIndex; // New: Index to identify the enemy group
+    public int groupIndex;
     private Transform[] waypoints;
     private int waypointIndex = 0;
+
+    private bool isLastWaveDestroyed = false;
 
     void Start()
     {
         waypoints = WaypointManager.Instance.GetWaypoints();
         SetInitialWaypoint();
+
+        EnemyGroupManager.onLastWaveDestroyed.AddListener(OnLastWaveDestroyed);
+    }
+
+    void OnDestroy()
+    {
+        EnemyGroupManager.onLastWaveDestroyed.RemoveListener(OnLastWaveDestroyed);
     }
 
     void Update()
     {
-        Move();
-
-        if (Vector3.Distance(transform.position, waypoints[waypointIndex].position) < 0.2f)
+        if (!isLastWaveDestroyed)
         {
-            GetNextWaypoint();
+            Move();
+
+            if (Vector3.Distance(transform.position, waypoints[waypointIndex].position) < 0.2f)
+            {
+                GetNextWaypoint();
+            }
         }
     }
 
@@ -38,6 +49,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
+            PerformLastWaypointAction();
             Destroy(gameObject);
         }
     }
@@ -46,5 +58,14 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.position = waypoints[waypointIndex].position;
     }
-}
 
+    void OnLastWaveDestroyed()
+    {
+        isLastWaveDestroyed = true;
+    }
+
+    void PerformLastWaypointAction()
+    {
+        Debug.Log("Enemigo llegó al último waypoint y la última oleada está destruida");
+    }
+}
