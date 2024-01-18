@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57df58aed6798284898559f9b576efcc
+guid: dc29f2c87db75c641b6304964c2795d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,19 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,97 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D_Walk_0
+      name: D_Walk 3_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 10
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3f9d6545d76fd5419ed0cc73f9c7f52
-      internalID: -1568364134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 10
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae80894f53e256748968d577489f2887
-      internalID: -496242093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 14
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfea96afedabafc459afa2219b6ededc
-      internalID: 367148362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 18
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 080071dcc6d444f49ac1df980d13ff55
-      internalID: 1574359553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 209
+        x: 14
         y: 17
-        width: 14
-        height: 16
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32ae5227a5a96da46835cff93dd98195
-      internalID: -1103476704
+      spriteID: e7e486878be294d468a6405b9b70f982
+      internalID: -1068861063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Walk_5
+      name: D_Walk 3_1
       rect:
         serializedVersion: 2
-        x: 257
-        y: 13
-        width: 14
-        height: 14
+        x: 62
+        y: 19
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +145,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bfa22d80f3f2d7468d818cb2a20e790
-      internalID: 1263780845
+      spriteID: 74dff7d3a5781914c9e4a29ad45d40fd
+      internalID: -91583792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Walk 3_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 16
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402b1bed87c30d145b4602da8b5900b7
+      internalID: -968399251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Walk 3_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 17
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592a0726754a13a4cb4653bb9fdd4e51
+      internalID: 384229235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Walk 3_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 19
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0ac7a2b94e0c84f988739d5a2791b0
+      internalID: -1907790737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Walk 3_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 16
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691b595a81edc2145a1c1aa2c6e313a0
+      internalID: 536336003
       vertices: []
       indices: 
       edges: []
@@ -259,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      D_Walk_0: -1568364134
-      D_Walk_1: -496242093
-      D_Walk_2: 367148362
-      D_Walk_3: 1574359553
-      D_Walk_4: -1103476704
-      D_Walk_5: 1263780845
+      D_Walk 3_0: -1068861063
+      D_Walk 3_1: -91583792
+      D_Walk 3_2: -968399251
+      D_Walk 3_3: 384229235
+      D_Walk 3_4: -1907790737
+      D_Walk 3_5: 536336003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -17218,7 +17218,9 @@ MonoBehaviour:
   - {fileID: 2383907240844120805, guid: 845a9817b285b664990df31ba538e1ce, type: 3}
   - {fileID: 364136518315424977, guid: 829319ba411290d418d1647f520dc000, type: 3}
   - {fileID: 4915719424500324878, guid: b321836938fd306418520743a556272f, type: 3}
-  enemiesPerGroup: 5
+  - {fileID: 2383907240844120805, guid: 55211ff6ad6292243a8724ec0c923d6b, type: 3}
+  - {fileID: 2383907240844120805, guid: 1f6fa79586fba774b9f4aa12fd643f04, type: 3}
+  enemiesPerGroup: 7
   timeBetweenGroups: 14
   timeBetweenEnemies: 1
   scaleStages:
@@ -17236,8 +17238,9 @@ MonoBehaviour:
   - {x: 2, y: 2, z: 2}
   - {x: 2.5, y: 2.5, z: 2.5}
   - {x: 3, y: 3, z: 3}
-  - {x: 4, y: 4, z: 4}
-  totalGroupsToSpawn: 8
+  - {x: 2.3, y: 2.3, z: 2.3}
+  - {x: 2.3, y: 2.3, z: 2.3}
+  totalGroupsToSpawn: 10
 --- !u!1 &1414046794
 GameObject:
   m_ObjectHideFlags: 0
@@ -20179,9 +20182,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -370038457
-  m_SortingLayer: 8
-  m_SortingOrder: -1
+  m_SortingLayerID: -80831067
+  m_SortingLayer: 4
+  m_SortingOrder: -16
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -21361,14 +21364,21 @@ MonoBehaviour:
   startPoint: {fileID: 735490336}
   path:
   - {fileID: 735490336}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 494058150}
+  - {fileID: 1889424405}
+  - {fileID: 1033122479}
+  - {fileID: 909797235}
+  - {fileID: 315615700}
+  - {fileID: 2071381567}
+  - {fileID: 1003888238}
+  - {fileID: 1199338918}
+  - {fileID: 1385658596}
+  - {fileID: 538709911}
   currency: 150
   health: 12
   MenuPerder: {fileID: 550374338}
-  MenuPausa: {fileID: 0}
-  victoryMenu: {fileID: 0}
+  MenuPausa: {fileID: 550374338}
+  victoryMenu: {fileID: 75699038}
 --- !u!61 &1881916775
 BoxCollider2D:
   m_ObjectHideFlags: 0
