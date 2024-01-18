@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 using UnityEngine.UI;
 
     public class Velocidadx2 : MonoBehaviour
     {
-        [SerializeField] private TMP_Text speedTv;
 
         private Button _speedBtn;
         private bool _isPressed;
@@ -23,13 +22,18 @@ using UnityEngine.UI;
 
         private void Start()
         {
-            speedTv.text = "X" + _gameSpeed; //default speed
+        UpdateTimeScale();
+
         }
 
-        private void OnSpeedBtnClick()
+    private void UpdateTimeScale()
+    {
+        Time.timeScale = _isPressed ? 2f : 1f;
+    }
+    private void OnSpeedBtnClick()
         {
-            _isPressed = !_isPressed;
-            _gameSpeed = _isPressed ? 2f : 1f;
-            speedTv.text = "X" + _gameSpeed;
+        _isPressed = !_isPressed;
+        UpdateTimeScale();
+
         }
     }

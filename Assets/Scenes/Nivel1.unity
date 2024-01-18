@@ -19331,6 +19331,7 @@ GameObject:
   - component: {fileID: 1617917364}
   - component: {fileID: 1617917363}
   - component: {fileID: 1617917366}
+  - component: {fileID: 1617917367}
   m_Layer: 5
   m_Name: X2
   m_TagString: Untagged
@@ -19401,10 +19402,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1617917366}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ToggleVelocidad
-        m_Mode: 1
+      - m_Target: {fileID: 1617917367}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19461,6 +19462,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea70d0f4a07565c44845d4ce6dbd9204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1617917367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617917361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c16de4d729d5244b6788c8dbf0f3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1630031066
