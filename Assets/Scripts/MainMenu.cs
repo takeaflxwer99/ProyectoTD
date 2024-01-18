@@ -9,7 +9,7 @@ using Button = UnityEngine.UI.Button;
 public class MainMenu : MonoBehaviour
 {
     private bool velocidadDoble = false;
-    private Button boton;
+    public Button boton;
     private void Start()
     {
         boton = GetComponent<Button>();
@@ -44,7 +44,13 @@ public void OpenLevel1()
     {
 
         velocidadDoble = !velocidadDoble;
+
         Time.timeScale = velocidadDoble ? 2f : 1f;
+
+        if (!velocidadDoble)
+        {
+            boton.interactable = !boton.interactable;
+        }
     }
 }
 
