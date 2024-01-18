@@ -21878,10 +21878,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towers:
   - name: Torreta mierdon
-    cost: 120
+    cost: 100
     prefab: {fileID: 6060479615079211856, guid: 23c0582ec4ec89041b92459735ea1466, type: 3}
   - name: Torreta prueba
-    cost: 200
+    cost: 180
     prefab: {fileID: 1216786823067693311, guid: d30dd97269d7b894aa9ec14a94e1fe41, type: 3}
 --- !u!4 &1881916773
 Transform:
