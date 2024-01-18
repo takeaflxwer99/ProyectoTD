@@ -25,10 +25,14 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _OutlineSoftness: 0.09
+    - _FaceDilate: 0.01
+    - _OutlineSoftness: 0
     - _OutlineWidth: 0
     - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 0.72225
+    - _ScaleRatioC: 0.5196043
     m_Colors:
-    - _FaceColor: {r: 0.29613832, g: 0.11953845, b: 0.10224175, a: 1}
+    - _FaceColor: {r: 0.5647117, g: 0.32314324, b: 0.1470273, a: 1}
+    - _OutlineColor: {r: 0.5647117, g: 0.32314324, b: 0.1470273, a: 1}
     - _UnderlayColor: {r: 0.5647117, g: 0.32314324, b: 0.1470273, a: 1}
   m_BuildTextureStacks: []

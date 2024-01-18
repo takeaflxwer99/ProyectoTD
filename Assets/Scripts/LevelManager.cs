@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public int currency;
     public int health;
     public GameObject MenuPerder;
+    public GameObject MenuPausa;
     private bool Pausa = false;
 
     // Start is called before the first frame update
@@ -60,6 +61,16 @@ public class LevelManager : MonoBehaviour
 
         }
     }
+        private void ShowPauseMenu()
+        {
+            if (MenuPausa != null)
+            {
+                MenuPausa.SetActive(true);
+                PauseGame();
+
+            }
+        }
+
     public void OnTriggerExit2D(Collider2D other)
     {
     
