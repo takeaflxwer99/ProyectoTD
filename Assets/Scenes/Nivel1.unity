@@ -21033,6 +21033,7 @@ MonoBehaviour:
   currency: 150
   health: 15
   MenuPerder: {fileID: 550374338}
+  MenuPausa: {fileID: 0}
 --- !u!61 &1881916775
 BoxCollider2D:
   m_ObjectHideFlags: 0
