@@ -827,6 +827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1172,9 +1176,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5238522446031082787, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238522446031082787, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
       propertyPath: m_Name
       value: WayPoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2793,6 +2809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3251,6 +3271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3316,6 +3340,10 @@ PrefabInstance:
     - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
       propertyPath: m_Name
       value: WayPoint (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6071,6 +6099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6370,6 +6402,10 @@ PrefabInstance:
     - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
       propertyPath: m_Name
       value: WayPoint (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6807,6 +6843,7 @@ MonoBehaviour:
   currency: 150
   health: 15
   MenuPerder: {fileID: 550374338}
+  MenuPausa: {fileID: 0}
 --- !u!61 &1881916775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6903,6 +6940,10 @@ PrefabInstance:
     - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
       propertyPath: m_Name
       value: WayPoint (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7671,6 +7712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7886,6 +7931,10 @@ PrefabInstance:
     - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
       propertyPath: m_Name
       value: WayPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011132198536752899, guid: 126cb49e8311116438fa1415c7fea9e7, type: 3}
+      propertyPath: m_TagString
+      value: Waypoint1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
