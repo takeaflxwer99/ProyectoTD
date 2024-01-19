@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043859289
-  m_SortingLayer: 3
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_Sprite: {fileID: 1337072200, guid: b17ca021a6d6b1740896cf26d9049e3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 1
   currencyWorth: 15
+  audioSource: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 496889cd606c5d847807ed226bef3e59, type: 3}
 --- !u!50 &3132980021122709232
 Rigidbody2D:
   serializedVersion: 4

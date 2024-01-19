@@ -10,10 +10,10 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     private bool isDestroyed = false;
-    public void TakeDamage (int dmg)
+    public void TakeDamage(int dmg)
     {
         hitPoints -= dmg;
         if (hitPoints <= 0 && !isDestroyed)
@@ -27,6 +27,6 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
