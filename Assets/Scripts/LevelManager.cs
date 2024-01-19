@@ -16,15 +16,17 @@ public class LevelManager : MonoBehaviour
     public GameObject MenuPausa;
     public GameObject victoryMenu;
 
+    private bool isPaused = false;
     public AudioSource gameMusic;
     public AudioSource gameOverSound;
     public AudioSource victorySound;
 
 
-    private bool isPaused = false;
 
-
-
+    public bool IsPaused
+    {
+        get { return isPaused; }
+    }
     // Start is called before the first frame update
     private void Awake()
     {

@@ -8,6 +8,7 @@ public class Plot : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
+    private LevelManager levelManager;
     private GameObject tower;
     private Color startColor;
     private bool isOccupied = false;
@@ -15,6 +16,7 @@ public class Plot : MonoBehaviour
     private void Start()
     {
         startColor = sr.color;
+        levelManager = LevelManager.main;
     }
 
     private void OnMouseEnter()
@@ -32,7 +34,7 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isOccupied)
+        if (!isOccupied && !levelManager.IsPaused)
         {
             if (tower != null) return;
 
